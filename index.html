@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Neutron Stars ⭐️</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section 
+					data-background-transition="convex" 
+					data-background-position="left"
+					data-background-image="/assets/neutron_star.jpg">
+
+					<h1 style="
+						font-size: 180px;
+    					margin-left: 51px;
+    					margin-top: 200px;
+    					color: #ffffff;">Neutron stars</h1>
+				</section>
+
+				<section title="What are they?">
+					<section data-state="atom">
+						<span id="atom"></span>
+						<h3>What are they?</h3>
+						<p class="fragment fade-right">The compressed remnants of giant stars</p>
+						<p class="fragment fade-right">What is left after a supernova</p>
+						<p class="fragment fade-right">Giant atom cores without electron shells</p>
+					</section>
+
+					<section>
+						<ul>
+							<li class="fade-right">Contains between 1-3 solar masses</li>
+							<li class="fragment fade-right">Compressed into a diameter of only 12-30km</li>	
+							<li class="fragment fade-right">Surface temperature ~170 * hotter than the sun</li>
+						</ul>
+						<aside class="notes">
+							Image: the size of a neutron star compared with the UK
+						</aside>
+						<img class="fragment fade-right" width="640" height="480" src="/assets/size_vs_uk.png"/>
+					</section>
+
+					<section>
+						<span>If you fell from a height of 1 meter on a neutron star, you would hit the ground at ~1,500,000 m/s</span>
+					</section>
+
+					<section>
+						<span>A piece of neutron star the size of a grain of sand would have a mass of about 29,250,000kg</span>
+						<img src="/assets/node-modules.jpg"/>
+					</section>
+					
+				</section>
+
+				<section>
+					<section title="How are they made?">
+						<h3>How are they made?</h3>
+						<p class="fragment fade-right">Neutron stars are formed when the gravitational force exceeds the <b>electron</b> degeneracy pressure</p>
+						<p class="fragment fade-right">The electron shell can no longer resist the force of gravity, and collapses into the nucleus</p>
+						<p class="fragment fade-right">Electrons fuse with the protons to make an atomic nucleus of neutrons</p>
+						<div id="star" class="star"></div>
+					</section>
+
+					<section data-background-image="/assets/black_hole.jpg">
+						<h3><b>Neutron</b> degeneracy pressure prevents them collapsing even further, into black holes</h3>
+					</section>
+
+					<section>
+						<p>Neutron star ingredients:</p>
+						<ul>
+							<li class="fragment fade-right">Get a large star (8-29 solar masses) </li>
+							<li class="fragment fade-right">Cook for ~10 million years, or until golden brown</li>
+							<aside class="notes">smaller stars will burn much slower, for billions of years</aside>
+							<li class="fragment fade-right">Leave to cool for ~10 million years, until its core collapses and creates a supernova</li>
+							<li class="fragment fade-right">You now have a neutron star for the next few trillion years 😀🌟</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<p>More exciting facts:</p>
+					<p class="fragment fade-right">Many fast spinning magnetic neutron stars are observed as pulsars</p>
+					<p class="fragment fade-right">Neutron stars can combine to form black holes</p>
+					<p class="fragment fade-right">Time would appear to pass more slowly on the surface of a neutron star</p>
+					<!-- <p class="fragment fade-right">When a neutron star decays past the point of being contained by gravity, it explodes in a burst of gamma rays</p> -->
+					<p class="fragment fade-right">This presentation is now over</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script src="js/anim.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				transition: 'convex',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
